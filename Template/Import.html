@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Input Mobile Number</title>
+  </head>
+  <body>
+    <form name="input" action="{% url 'Security' %}" method="post">
+      {% csrf_token %}
+    <label for="fname"><h1>Whatsapp No: </h1></label>
+  <input type="number" id="number" name="number">
+  <input type="submit" value="next">
+  <br>
+  <br>
+  <h1>Click Next and Relax We will notify you IF needed</h1>
+  </body>
+</html>
